@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var test1 = {a: 1, b: 2, c: 3};
+
+
+
+    var test2 = function () {
+    };
+
+    var test3 = [1, 2, 3, 4];
+
+    var test4 = [];
+
+    test4[100] = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    console.log(getCount(test1));
+    console.log(getCount(test2));
+    console.log(getCount(test3));
+    console.log(getCount(test4));
+
+    function getCount(value) {
+        var count = 0;
+        for (var val in value) {
+            count++
+            // console.log(value[val]);
+        }
+        return count;
+    }
+</script>
+</body>
+</html>

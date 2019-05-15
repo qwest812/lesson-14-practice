@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let counter =createCouner(10,3);
+    let counter2=createCouner(7,1);
+    function createCouner(start, add) {
+        let count=start;
+      return function () {
+          let result =count;
+          count += add;
+        return result;
+      }
+
+    }
+
+    console.log(counter);
+    console.log(counter());
+    console.log(counter());
+    console.log(counter());
+    console.log(counter());
+    console.log(counter());
+    // console.log(counter());
+    // console.log(counter2());
+    // console.log(counter2());
+
+
+</script>
+</body>
+</html>

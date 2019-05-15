@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let counter= createCouner(0,2);
+    function createCouner(start, add) {
+        let count=start;
+        return function () {
+            count = count +add;
+            return count;
+        }
+    }
+    console.log(pick(counter, 5));
+
+    function pick(func,count) {
+        let arr=[];
+        for(let i=0;i<count;i++){
+          arr.push(func())
+        }
+        return arr
+    }
+
+
+</script>
+</body>
+</html>

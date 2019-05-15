@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let test = [
+        {'firstName': 'test1', 'secondName': 'test3'},
+        {'firstName': 'test2', 'secondName': 'test4'},
+    ];
+
+    function getField(object, fieldName) {
+        let value=[];
+        for (let field in object) {
+            console.log(object[field][fieldName]);
+            if(object[field][fieldName]){
+                value.push(object[field][fieldName]);
+            }
+        }
+        return value;
+    }
+
+    console.log(getField(test, 'firstName'));
+</script>
+</body>
+</html>
